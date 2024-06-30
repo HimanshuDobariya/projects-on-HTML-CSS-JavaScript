@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.btn {
+  background: #7d2ae8;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #6900f2, #ff00ee);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 8%;
+  z-index: 999;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list .nav-links {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.form_container {
+  position: absolute;
+  max-width: 320px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.form_close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #000;
+  font-size: 22px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.form_container h2 {
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+}
+
+.input_box {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #aaa;
+  padding: 0 30px;
+  transition: all 0.3s ease;
+}
+
+.input_box input:focus {
+  border-color: #7d2ae8;
+}
+
+.input_box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+.input_box i.email,
+.input_box i.password {
+  left: 0;
+}
+
+.input_box input:focus ~ i.email,
+.input_box input:focus ~ i.password {
+  color: #7d2ae8;
+}
+
+.input_box i.pw_hide {
+  right: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.option_field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.option_field .checkbox {
+  display: flex;
+  white-space: nowrap;
+  column-gap: 8px;
+}
+
+.checkbox label {
+  color: #000;
+  user-select: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.checkbox input {
+  accent-color: #7d2ae8;
+}
+
+.option_field a {
+  color: #7d2ae8;
+  font-size: 12px;
+}
+
+.option_field a:hover {
+  text-decoration: underline;
+}
+
+.form_container .btn {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.login_signup {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup_form {
+  display: none;
+}
+
+.form_container.active .signup_form {
+  display: block;
+}
+.form_container.active .login_form {
+  display: none;
+}
