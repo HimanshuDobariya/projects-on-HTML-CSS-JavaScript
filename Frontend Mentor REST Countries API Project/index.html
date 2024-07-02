@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor REST Countries API Project</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="title">
+        <a href="/Frontend Mentor REST Countries API Project/"
+          >Where in the world?</a
+        >
+      </h2>
+      <p class="dark-mode">
+        <i class="fa-regular fa-moon"></i> <span>Dark Mode</span>
+      </p>
+    </div>
+
+    <main>
+      <div class="search-filter">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search for a country..." />
+        </div>
+
+        <div class="filter-container">
+          <div class="filter-region">
+            <p>Filter by Region</p>
+            <i class="fa-solid fa-chevron-down filter-icon"></i>
+          </div>
+          <ul class="filter-list">
+            <li>Africa</li>
+            <li>America</li>
+            <li>Asia</li>
+            <li>Europe</li>
+            <li>Oceania</li>
+          </ul>
+        </div>
+      </div>
+      <div class="countries"></div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

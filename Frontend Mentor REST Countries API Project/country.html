@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="title">
+        <a href="/Frontend Mentor REST Countries API Project/"
+          >Where in the world?</a
+        >
+      </h2>
+      <p class="dark-mode"><i class="fa-regular fa-moon"></i> Dark Mode</p>
+    </div>
+
+    <main>
+      <div class="country-details-container">
+        <p class="back-btn" onclick="history.back()">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back
+        </p>
+
+        <div class="country-details">
+          <img src="" />
+
+          <div class="details-text">
+            <h1></h1>
+
+            <div class="content">
+              <p>Native name : <span class="native-name"></span></p>
+              <p>Population : <span class="population"></span></p>
+              <p>Region : <span class="region"></span></p>
+              <p>Subregion : <span class="sub-region"></span></p>
+              <p>Capital : <span class="capital"></span></p>
+              <p>Top Level Domain : <span class="top-domain"></span></p>
+              <p>Currencies : <span class="currency"></span></p>
+              <p>Languages : <span class="language"></span></p>
+            </div>
+
+            <div class="border-countries">
+              <b>Border Countries: &nbsp;</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="country.js" defer></script>
+  </body>
+</html>
